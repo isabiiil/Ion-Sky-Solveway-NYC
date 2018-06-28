@@ -7,11 +7,11 @@
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 50px;
-      background: blue;
+      background: #9CC4E4;
       padding-top: 3px;
     }
     #circle:hover {
-        background: red;
+        background: #3A89C9;
     }
     #trashicon {
         width: 50px;
