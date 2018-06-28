@@ -1,33 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    #circle {
-      width: 60px;
-      height: 60px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 50px;
-      background: #9CC4E4;
-      padding-top: 3px;
-    }
-    #circle:hover {
-        background: #3A89C9;
-    }
-    #trashicon {
-        width: 50px;
-        height: 50px;
-        border: none;
-    	display: block;
-    	margin: 0 auto;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-1%, 7%)
-    }
-</style>
-<head>
-  <title>Report Page</title>
-</head>
-<body>
-    <h1>Please select the type of issue you want to report:</h1>
- 
-    <div id="circle"><div id="trashicon"><a href="http://www.google.com"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/3823-200.png", width="50", height="47"></a></div></div>
+    <style>
+        #trashcircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            float: left;
+        }
+        #trashcircle:hover {
+            background: #3A89C9;
+            float: left;
+        }
+        #sickcircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            margin-left:20px;
+            float: left;
+        }
+        #sickcircle:hover {
+            background: #3A89C9;
+            float: left;
+        }
+        #line1 {
+            overflow: hidden;
+        }
+        #trashicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-1%, 7%)
+        }
+        #sickicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(2%, 7%)
+        }
+        #maintaincircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            float: left;
+        }
+        #maintaincircle:hover {
+            background: #3A89C9;
+            float: left;
+        }
+        
+        #line2 {
+            overflow: hidden;
+        }
+        #violencecircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            margin-left:20px;
+            float: left;
+        }
+        #violencecircle:hover {
+            background: #3A89C9;
+            float: left;
+        }   
+        #maintainicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(6%, 12%)
+        }
+        #violenceicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, 6%)
+        }
+        #othercircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            margin-left:20px;
+            float: left;
+        }
+        #othercircle:hover {
+            background: #3A89C9;
+            float: left;
+        }   
+        #othericon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(1%, 7%)
+        }
+    </style>
+    <head>
+        <title>Report Page</title>
+    </head>
+    <body>
+        <h1>Please select the type of issue you want to report:</h1>
+
+        <div id="line1"><div id="trashcircle"><div id="trashicon"><a href="http://www.google.com"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/3823-200.png", width="50", height="47", alt="Garbage Disposal"></a></div></div>
+        <div id="sickcircle"><div id="sickicon"><a href="http://www.google.com"><img src="https://png.icons8.com/metro/1600/triangular-bandage.png", width="50", height="47", alt="Sick Passenger"></a></div></div></div><br>
+        
+        <div id="line2"><div id="maintaincircle"><div id="maintainicon"><a href="http://www.google.com"><img src="https://png.icons8.com/metro/1600/maintenance.png", width="45", height="45", alt="Maintenance Needed"></a></div></div>
+        <div id="violencecircle"><div id="violenceicon"><a href="http://www.google.com"><img src="http://cdn.onlinewebfonts.com/svg/img_548456.png", width="50", height="50", alt="Sick Passenger"></a></div></div>
+        <div id="othercircle"><div id="othericon"><a href="http://www.google.com"><img src="https://cdn3.iconfinder.com/data/icons/smoothfill-action/30/action_028-detail-more-info-others-512.png", width="50", height="50", alt="Other Complaints"></a></div></div>
+        
+        </div><br> 
+
+
