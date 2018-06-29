@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+        html {
+        	background: linear-gradient(#E9F2F9, #1B325F);
+            min-height: 100%;
+        }
         #trashcircle {
             width: 60px;
             height: 60px;
@@ -30,7 +34,7 @@
             background: #3A89C9;
             float: left;
         }
-        #line1 {
+        #line1, #line2, #line3 {
             overflow: hidden;
         }
         #trashicon {
@@ -66,10 +70,6 @@
         #maintaincircle:hover {
             background: #3A89C9;
             float: left;
-        }
-        
-        #line2 {
-            overflow: hidden;
         }
         #violencecircle {
             width: 60px;
@@ -131,22 +131,117 @@
             left: 50%;
             transform: translate(1%, 7%)
         }
+        #delaycircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            float: left;
+        }
+        #delaycircle:hover {
+            background: #3A89C9;
+            float: left;
+        }   
+        #delayicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-5%, 2%)
+        }
+        #idlecircle {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 50px;
+            background: #9CC4E4;
+            padding-top: 3px;
+            margin-left:20px;
+            float: left;
+        }
+        #idlecircle:hover {
+            background: #3A89C9;
+            float: left;
+        }   
+        #idleicon {
+            width: 50px;
+            height: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-1%, 13%)
+        }
     </style>
     <head>
         <title>Report Page</title>
     </head>
-    <body>
-        <h1>Please select the type of issue you want to report:</h1>
+    <body id="body">
+        <h2><font face="Helvetica", color="#1B325F">Please select the type of issue<br>you want to report: </font></h2>
 
-        <div id="line1"><div id="trashcircle"><div id="trashicon"><a href="http://www.google.com"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/3823-200.png", width="50", height="47", alt="Garbage Disposal"></a></div></div>
-        <div id="sickcircle"><div id="sickicon"><a href="http://www.google.com"><img src="https://png.icons8.com/metro/1600/triangular-bandage.png", width="50", height="47", alt="Sick Passenger"></a></div></div></div><br>
-        
-        <div id="line2"><div id="maintaincircle"><div id="maintainicon"><a href="http://www.google.com"><img src="https://png.icons8.com/metro/1600/maintenance.png", width="45", height="45", alt="Maintenance Needed"></a></div></div>
-        <div id="violencecircle"><div id="violenceicon"><a href="http://www.google.com"><img src="http://cdn.onlinewebfonts.com/svg/img_548456.png", width="50", height="50", alt="Sick Passenger"></a></div></div>
-        <div id="othercircle"><div id="othericon"><a href="http://www.google.com"><img src="https://cdn3.iconfinder.com/data/icons/smoothfill-action/30/action_028-detail-more-info-others-512.png", width="50", height="50", alt="Other Complaints"></a></div></div>
-        
-        </div><br> 
-
-
-http://strategicservicesgroup.org/wp-content/uploads/2016/05/group41.png worker icon
-https://d30y9cdsu7xlg0.cloudfront.net/png/366673-200.png delay icon
+      	<div id="line1">
+        	<div id="trashcircle">
+                <div id="trashicon">
+                    <a href="http://www.google.com">
+                        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/3823-200.png", width="50", height="47", alt="Garbage Disposal">
+                    </a>
+                </div>
+            </div>
+        	<div id="sickcircle">
+                <div id="sickicon">
+                    <a href="http://www.google.com">
+                        <img src="https://png.icons8.com/metro/1600/triangular-bandage.png", width="50", height="47", alt="Sick Passenger">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="line2">
+            <div id="maintaincircle">
+                <div id="maintainicon">
+                    <a href="http://www.google.com">
+                        <img src="https://png.icons8.com/metro/1600/maintenance.png", width="45", height="45", alt="Maintenance Needed">
+                    </a>
+                </div>
+            </div>
+        	<div id="violencecircle">
+                <div id="violenceicon">
+                    <a href="http://www.google.com">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_548456.png", width="50", height="50", alt="Violence">
+                    </a>
+                </div>
+            </div>
+        	<div id="othercircle">
+                <div id="othericon">
+                    <a href="http://www.google.com">
+                        <img src="https://cdn3.iconfinder.com/data/icons/smoothfill-action/30/action_028-detail-more-info-others-512.png", width="50", height="50", alt="Other Complaints">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br> 
+        <div id="line3">
+            <div id="delaycircle">
+                <div id="delayicon">
+                    <a href="http://www.google.com">
+                        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/366673-200.png", width="55", height="55", alt="Train Delays">
+                    </a>
+                </div>
+            </div>
+            <div id="idlecircle">
+                <div id="idleicon">
+                    <a href="http://www.google.com">
+                        <img src="http://strategicservicesgroup.org/wp-content/uploads/2016/05/group41.png", width="50", height="45", alt="Idle Subway Workers"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
